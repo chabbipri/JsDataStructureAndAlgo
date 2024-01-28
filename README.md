@@ -1,2 +1,2 @@
 # JsDataStructureAndAlgo
-Udemy: Data Structure and Algorithms 
+Udemy: Data Structure and Algorithms by Andrei Neagoie
