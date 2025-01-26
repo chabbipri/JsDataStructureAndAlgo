@@ -9,11 +9,11 @@ O(n) Linear- for loops, while loops through n items
 //O(n log(n)) Log Liniear- usually sorting operations
 O(n^2) Quadratic- every element in a collection needs to be compared to ever other element. Two
 nested loops
-//O(2^n) Exponential- recursive algorithms that solves a problem of size N
-//O(n!) Factorial- you are adding a loop for every element
+// O(2^n) Exponential- recursive algorithms that solves a problem of size N
+// O(n!) Factorial- you are adding a loop for every element
 
-Iterating through half a collection is still O(n)
-Two separate collections: O(a * b)
+**Iterating through half a collection is still O(n)
+**Two separate collections: O(a * b)
 
 -What can cause time in a function?-
 Operations (+, -, *, /)

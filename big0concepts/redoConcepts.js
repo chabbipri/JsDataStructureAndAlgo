@@ -67,7 +67,7 @@ function funChallenge(input) {
 }
 
 // BigO = O(1 + 1 + 1) + O(4n)
-// BigO = O(3 + 4n)
+// BigO = O(3 + 4n) = O(n)
 
 // What is the Big O of the below function? (Hint, you may want to go line by line)
 function anotherFunChallenge(input) {
@@ -86,7 +86,75 @@ function anotherFunChallenge(input) {
     }
     let whoAmI = "I don't know"; // O(1)
   }
-  // Big O = 4 + 7n = O(n)
+
+// Big O = 4 + 7n = O(n)
+
+// Rules of Simplification in Big O
+// Rule 1: Worst Case
+
+// Rule 2: Drop the constants.
+
+// Rule 3: Different Terms for Inputs
+  // WORST: O(n^2) :
+     //If we have loop inside a loop that it is O(n) * O(n) => O(n*2)
+  // O(a + b) : When we loop two arrays one after the other, a is different array and b is different array.
+
+// Rule 4 : Drop Non Dominants
+  // If a BigO is O(n + n^2), In this case O(n) is a better notation than O(n^2) so we drop the O(n).
+  // In this case BigO = O(n^2)
+
+function differentTerms(input1, input2){
+  for (i = 0; i < input1.length; i++){
+    console.log(input1[i]);
+  } // O(a)
+
+  for (i = 0; i < input2.length; i++){
+    console.log(input2[i]);
+  } // O(b)
+}
+// BigO = O(a+b)
+
+// Log all pairs of arrays
+const boxes = [1,2,3,4,5];
+
+function pairArray(boxes){
+    for (i = 0; i < boxes.length; i++){
+      for (j = 1; j < boxes.length; j ++){
+        console.log(boxes[i], boxes[j])
+      }
+    }
+}
+
+pairArray(boxes)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
